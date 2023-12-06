@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:id="@+id/goals"
+        android:background="@drawable/card_background"
+        >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY FITNESS GOALS"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/caloriesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCalories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calories:"
+                android:textSize="20sp"
+
+                android:textColor="@android:color/holo_blue_dark"
+                />
+
+            <TextView
+                android:id="@+id/textViewCaloriesValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2500"
+                android:textSize="20sp"
+                android:textColor="#0E0E0E"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proteinLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewProtein"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Protein:"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+            <TextView
+                android:id="@+id/textViewProteinValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="150g"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEndDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proteinLayout"
+            android:layout_marginTop="100dp"
+            android:text="END DAY"
+            android:textColor="@android:color/white"
+            android:background="@drawable/round"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+

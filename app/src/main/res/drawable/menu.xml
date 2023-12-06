@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_add_food"
+        android:title="Add Food"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_tracking"
+        android:title="Tracking"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:title="Settings"
+
+        app:showAsAction="ifRoom"/>
+
+</menu>

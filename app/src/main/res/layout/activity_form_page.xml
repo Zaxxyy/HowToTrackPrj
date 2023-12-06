@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+   >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TELL ME MORE ABOUT YOURSELF"
+                android:textSize="50px"
+                android:textColor="@android:color/holo_blue_dark"
+                android:fontFamily="monospace"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+
+                />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtWeight"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150px"
+                android:hint="Weight"
+                android:backgroundTint="@android:color/holo_blue_dark">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/holo_blue_dark"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtHeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300px"
+        android:hint="Height"
+        android:backgroundTint="@android:color/holo_blue_dark">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtGym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtHeight"
+                android:layout_marginTop="16dp"
+                android:text="How many days per week you go to the gym?"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtGym"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBtnOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioBtnTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+                <RadioButton
+                    android:id="@+id/radioBtnThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3" />
+                <RadioButton
+                    android:id="@+id/radioBtnFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4" />
+                <RadioButton
+                    android:id="@+id/radioBtnFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5" />
+                <RadioButton
+                    android:id="@+id/radioBtnFivePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5+" />
+
+            </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/btnObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupGym"
+        android:layout_marginTop="16dp"
+        android:text="Objective"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupObj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnObj"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBtnGain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gain Weight"
+            android:layout_marginRight="10dp"/>
+
+        <RadioButton
+            android:id="@+id/radioBtnLose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight" />
+
+    </RadioGroup>
+
+            <Button
+                android:id="@+id/btnEnter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupObj"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="Enter"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:background="@drawable/round"
+                style="@style/Widget.MaterialComponents.Button"
+                android:textSize="30px"/>
+
+
+
+
+
+</RelativeLayout>
